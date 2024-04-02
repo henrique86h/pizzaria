@@ -8,23 +8,23 @@
                     <form action="">
                         <div class="pt-5">
                             <div class="inputbox mb-2">
-                                <input class="bg-dark-subtle border-light-subtle" type="text" name="nome" id="nome" placeholder="Nome">
+                                <input class="bg-dark-subtle border-light-subtle pe-5" type="text" name="nome" id="nome" placeholder="Nome">
                                 <label for="nome"></label>
                             </div>
                             <div class="inputbox mb-2">
-                                <input class="bg-dark-subtle border-light-subtle" type="email" name="email" id="email" placeholder="E-mail">
+                                <input class="bg-dark-subtle border-light-subtle pe-5" type="email" name="email" id="email" placeholder="E-mail">
                                 <label for="email"></label>
                             </div>
                             <div class="inputbox mb-2">
-                                <input class="bg-dark-subtle border-light-subtle" type="text" name="assunto" id="assunto" placeholder="Assunto">
+                                <input class="bg-dark-subtle border-light-subtle pe-5" type="text" name="assunto" id="assunto" placeholder="Assunto">
                                 <label for="assunto"></label>
                             </div>
                             <div class="inputbox mb-2">
-                                <textarea class="bg-dark-subtle border-light-subtle" name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+                                <textarea class="bg-dark-subtle border-light-subtle pe-5 pb-5" name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
                                 <label for="mensagem"></label>
                             </div>
                             <div class="inputbox text-center">
-                            <button type="submit">Enviar</button>
+                            <button class="bg-dark-subtle border-light-subtle" type="submit">Enviar</button>
                             </div>
                         </div>
                     </form>
