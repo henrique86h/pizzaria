@@ -6,7 +6,7 @@
                 <hr>
                 <div class="col">
                     <form action="">
-                        <div class="pt-5">
+                        <div class="formu pt-5">
                             <div class="inputbox mb-2">
                                 <input class="bg-dark-subtle border-light-subtle pe-5" type="text" name="nome" id="nome" placeholder="Nome">
                                 <label for="nome"></label>

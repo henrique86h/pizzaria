@@ -1,5 +1,5 @@
         <?php include("cabecalho.php") ?>
-        <?php include("menu.php") ?>
+        <?php include("menu.php") ?>.
         <main class="bg-light row pe-3 ps-3">
             <div class="row">
                 <h2 class="mt-4 h1">A melhor pizza da região</h2>
@@ -23,22 +23,29 @@
             <div class="row">
                 <div class="col">
                     <h3>Nossos sabores</h3>
-                    <p class="sabores"> À Moda da Casa  <br>
-                        Aliche <br>
-                        Atum <br>
-                        Baiana <br>
-                        Bauru <br>
-                        Canadense <br>
-                        Catupiry <br>
-                        Calabresa <br>
-                        À Moda da Casa  <br>
-                        Aliche <br>
-                        Atum <br>
-                        Baiana <br>
-                        Bauru <br>
-                        Canadense <br>
-                        Catupiry <br>
-                        Calabresa
+                    <p class="sabores">
+                        <?php
+                        $servidor = "10.125.47.28" ;
+                        $usuario = "pizzaiolo"; // "root"
+                        $senha = "123"; // ""
+                        $bd = "bd_pizza";
+                        
+                        //conexão
+                        $conexao = mysqli_connect($servidor, $usuario, $senha, $bd, 3300);
+
+                        // criar o sql
+                        $sql = "select nome from pizzas_novo";
+
+                        // executar sql no banco
+                        $todasAsPizzas = mysqli_query($conexao , $sql);
+
+                        // laço de repetição - mostrar cada um dos dados, linha a linha
+                        while($umaPizza = mysqli_fetch_assoc($todasAsPizzas)){
+                            echo $umaPizza["nome"] . "<br>";
+                        }
+
+                        mysqli_close($conexao);
+                        ?>
                     </p>
                 </div><!-- coluna -->
                 <div class="col">
