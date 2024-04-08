@@ -19,7 +19,27 @@
                 ?>
                     <div class="col text-center">
                         <img src="<?php echo $umaPizza["foto"]; ?>" alt="<?php echo $umaPizza["nome"] ?>" class= "img-fluid">
-                        <p><?php echo $umaPizza["nome"];?><br><?php echo $umaPizza["classificacao"];?></p>
+                        <?php
+                        $estrelas = $umaPizza["classificacao"];
+                        
+                        // com FOR
+                        
+                        /* for ($i=0; $i < $estrelas ; $i++):
+                            echo "⭐";
+                        
+                        endfor; */
+
+                        // ou com WHILE
+                       
+                        $i = 0;
+                        while($i<$estrelas):
+                            echo "⭐";
+                            $i++;
+                        
+                        endwhile;
+                        
+                        ?>
+                        <p><?php echo $umaPizza["nome"];?></p>
                     </div>
                 <?php
                 endwhile;
