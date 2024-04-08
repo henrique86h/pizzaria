@@ -18,7 +18,7 @@
                 while($umaPizza = mysqli_fetch_assoc($todasAsPizzas)):
                 ?>
                     <div class="col text-center">
-                        <img src="<?php echo $umaPizza["foto"]; ?>" alt="<?php echo $umaPizza["nome"] ?>" class= "img-fluid">
+                        <img src="<?php echo $umaPizza["foto"]; ?>" alt="<?php echo $umaPizza["nome"]; ?>" class= "img-fluid">
                         <?php
                         $estrelas = $umaPizza["classificacao"];
                         
